@@ -11,6 +11,19 @@ function like(action, itemFeed){
     }
 }
 
+function saveItem(action, itemFeed){
+    console.log(action)
+    const saved = document.getElementById("saved "+itemFeed)
+    const unsaved = document.getElementById("unsaved "+itemFeed)
+    if(action === true){
+        unsaved.style.display = "none"
+        saved.style.display = "initial"
+    }else{
+        unsaved.style.display = "initial"
+        saved.style.display = "none"
+    }
+}
+
 function carregaFeed(){
     var qtdItensFeed = 50
     for(i = 1; i < qtdItensFeed; i++){
@@ -42,7 +55,8 @@ function carregaFeed(){
                         <i class="bi bi-send text-white"></i>
                     </div>
                     <div class="text-end">
-                        <i class="bi bi-bookmark"></i>
+                        <i class="bi bi-bookmark" id="unsaved ${i}" onclick="saveItem(!false, ${i})"></i>
+                        <i class="bi bi-bookmark-fill" id="saved ${i}" onclick="saveItem(!true, ${i})" style="display: none"></i>
                     </div>
                 </div>
                 <div class="descricao">

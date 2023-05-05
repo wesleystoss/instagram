@@ -45,9 +45,6 @@ body{
 i#unliked{
     color: white;
 }
-#liked{
-    display: none;
-}
 
 .descricao{
     color: #dcdcdc;
