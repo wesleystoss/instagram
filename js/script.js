@@ -12,8 +12,8 @@ function like(action, itemFeed){
 }
 
 function carregaFeed(){
-    
-    for(i = 1; i < 6; i++){
+    var qtdItensFeed = 50
+    for(i = 1; i < qtdItensFeed; i++){
         const getDiv = document.getElementsByTagName("main")[0]
         const itemFeed = `
             <div class="itemFeed ${i} container">
