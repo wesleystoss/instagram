@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    color: white;
+}  
+
+.divImg{
+    text-align: center;
+    border-top: 0.4px solid #dcdcdc;
+    border-bottom: 0.001px solid #dcdcdc;
+    padding: 30px;
+}
+.divImg img{
+    height: 300px;
+}
+
+.userPhoto{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.userProfile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userProfile:hover{
+    cursor: pointer;
+}
+.itemFeed{
+    max-width: 600px;
+    padding: 20px;
+}
+.interacoes{
+    display: flex;
+    justify-content: space-between;
+}
+.interacoes i{
+    font-size: 25px;
+    text-align: center;
+}
+.interacoes i:hover{
+    cursor: pointer;
+}
+
+i#unliked{
+    color: white;
+}
+#liked{
+    display: none;
+}
+
+.descricao{
+    color: #dcdcdc;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 30px;
+}
+header{
+    background-color: black;
+    padding: 20px;
+}
